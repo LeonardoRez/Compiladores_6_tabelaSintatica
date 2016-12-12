@@ -2,24 +2,11 @@ package compiladores6;
 
 import java.util.ArrayList;
 
-class Simbolo {
-
-    String simbolo;
-
-    public Simbolo() {
-    }
-
-    @Override
-    public String toString() {
-        return simbolo;
-    }
-
-}
 
 public class Producao {
 
-    String nome;
-    ArrayList<String> simbolos[];
+    public String nome;
+    public ArrayList<String> simbolos[];
 
     public Producao(String producao) {
         int quantT[] = validarProducao(producao);
