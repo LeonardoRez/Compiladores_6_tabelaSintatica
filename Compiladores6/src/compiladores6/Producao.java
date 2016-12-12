@@ -183,12 +183,19 @@ public class Producao {
     }
 
     public static void main(String[] args) {
-        try {
-            Producao p = new Producao("<A'> -> <a><A>|<&>");
-            System.out.println(p);
+        /*try {
+        Producao p = new Producao("<A'> -> <a><A>|<&>");
+        System.out.println(p);
         } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
+        System.out.println(e.getMessage());
+        }*/
+        
+        String temp = "tes te a a a     oh yes";
+        System.out.println("Tamanho da string:"+ temp.length());
+        temp = temp.replace(" ", "");
+        temp = temp.replace("\t", "");
+        System.out.println("Tamanho da string:"+ temp.length());
+                    
     }
 
 }
